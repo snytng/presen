@@ -1,0 +1,80 @@
+<svg width="811px" height="155px"
+ viewBox="0.00 0.00 810.50 155.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="graph0" class="graph" transform=" rotate(0) translate(4 151)">
+<title>アーキテクチャ図</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-151 806.5,-151 806.5,4 -4,4"/>
+<text text-anchor="middle" x="401.25" y="-7.8" font-family="Times New Roman,serif" font-size="14.00">アーキテクチャ図</text>
+<g id="clust1" class="cluster"><title>clusterArchitecture</title>
+<polygon fill="none" stroke="black" points="8,-31 8,-83 388,-83 388,-31 8,-31"/>
+</g>
+<!-- domain -->
+<g id="node1" class="node"><title>domain</title>
+<polygon fill="#eedd82" stroke="black" points="380,-75 322,-75 322,-39 380,-39 380,-75"/>
+<text text-anchor="middle" x="351" y="-53.3" font-family="Times New Roman,serif" font-size="14.00">domain</text>
+</g>
+<!-- presentation -->
+<g id="node2" class="node"><title>presentation</title>
+<polygon fill="#eedd82" stroke="black" points="304,-75 220,-75 220,-39 304,-39 304,-75"/>
+<text text-anchor="middle" x="262" y="-53.3" font-family="Times New Roman,serif" font-size="14.00">presentation</text>
+</g>
+<!-- application -->
+<g id="node3" class="node"><title>application</title>
+<polygon fill="#eedd82" stroke="black" points="201.5,-75 124.5,-75 124.5,-39 201.5,-39 201.5,-75"/>
+<text text-anchor="middle" x="163" y="-53.3" font-family="Times New Roman,serif" font-size="14.00">application</text>
+</g>
+<!-- infrastructure -->
+<g id="node4" class="node"><title>infrastructure</title>
+<polygon fill="#eedd82" stroke="black" points="106,-75 16,-75 16,-39 106,-39 106,-75"/>
+<text text-anchor="middle" x="61" y="-53.3" font-family="Times New Roman,serif" font-size="14.00">infrastructure</text>
+</g>
+<!-- com.epson -->
+<g id="node5" class="node"><title>com.epson</title>
+<polygon fill="whitesmoke" stroke="black" points="563.5,-147 484.5,-147 484.5,-111 563.5,-111 563.5,-147"/>
+<text text-anchor="middle" x="524" y="-125.3" font-family="Times New Roman,serif" font-size="14.00">com.epson</text>
+</g>
+<!-- com.epson&#45;&gt;presentation -->
+<g id="edge4" class="edge"><title>com.epson&#45;&gt;presentation</title>
+<path fill="none" stroke="black" d="M484.327,-122.521C441.321,-115.898 371.054,-103.076 313,-83 309.732,-81.87 306.403,-80.5806 303.091,-79.1966"/>
+<polygon fill="black" stroke="black" points="304.424,-75.959 293.864,-75.0997 301.583,-82.3567 304.424,-75.959"/>
+</g>
+<!-- org.osgi -->
+<g id="node6" class="node"><title>org.osgi</title>
+<polygon fill="whitesmoke" stroke="black" points="460,-75 398,-75 398,-39 460,-39 460,-75"/>
+<text text-anchor="middle" x="429" y="-53.3" font-family="Times New Roman,serif" font-size="14.00">org.osgi</text>
+</g>
+<!-- com.epson&#45;&gt;org.osgi -->
+<g id="edge1" class="edge"><title>com.epson&#45;&gt;org.osgi</title>
+<path fill="none" stroke="black" d="M500.517,-110.697C488.437,-101.796 473.546,-90.8232 460.484,-81.1989"/>
+<polygon fill="black" stroke="black" points="462.34,-78.2187 452.213,-75.1043 458.187,-83.8541 462.34,-78.2187"/>
+</g>
+<!-- [Lcom.epson -->
+<g id="node7" class="node"><title>[Lcom.epson</title>
+<polygon fill="whitesmoke" stroke="black" points="570,-75 478,-75 478,-39 570,-39 570,-75"/>
+<text text-anchor="middle" x="524" y="-53.3" font-family="Times New Roman,serif" font-size="14.00">[Lcom.epson</text>
+</g>
+<!-- com.epson&#45;&gt;[Lcom.epson -->
+<g id="edge2" class="edge"><title>com.epson&#45;&gt;[Lcom.epson</title>
+<path fill="none" stroke="black" d="M524,-110.697C524,-102.983 524,-93.7125 524,-85.1124"/>
+<polygon fill="black" stroke="black" points="527.5,-85.1043 524,-75.1043 520.5,-85.1044 527.5,-85.1043"/>
+</g>
+<!-- com.change_vision -->
+<g id="node8" class="node"><title>com.change_vision</title>
+<polygon fill="whitesmoke" stroke="black" points="713.5,-75 588.5,-75 588.5,-39 713.5,-39 713.5,-75"/>
+<text text-anchor="middle" x="651" y="-53.3" font-family="Times New Roman,serif" font-size="14.00">com.change_vision</text>
+</g>
+<!-- com.epson&#45;&gt;com.change_vision -->
+<g id="edge3" class="edge"><title>com.epson&#45;&gt;com.change_vision</title>
+<path fill="none" stroke="black" d="M555.068,-110.876C571.827,-101.639 592.706,-90.1308 610.702,-80.2116"/>
+<polygon fill="black" stroke="black" points="612.745,-83.0822 619.813,-75.1898 609.366,-76.9517 612.745,-83.0822"/>
+</g>
+<!-- org.atilika -->
+<g id="node9" class="node"><title>org.atilika</title>
+<polygon fill="whitesmoke" stroke="black" points="802.5,-75 731.5,-75 731.5,-39 802.5,-39 802.5,-75"/>
+<text text-anchor="middle" x="767" y="-53.3" font-family="Times New Roman,serif" font-size="14.00">org.atilika</text>
+</g>
+<!-- com.epson&#45;&gt;org.atilika -->
+<g id="edge5" class="edge"><title>com.epson&#45;&gt;org.atilika</title>
+<path fill="none" stroke="black" d="M563.524,-122.578C604.419,-116.163 669.657,-103.662 723,-83 725.524,-82.0222 728.079,-80.9176 730.619,-79.7309"/>
+<polygon fill="black" stroke="black" points="732.33,-82.7875 739.678,-75.1541 729.174,-76.5396 732.33,-82.7875"/>
+</g>
+</g>
+</svg>
