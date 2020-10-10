@@ -293,5 +293,5 @@
 	</dependencies>
 	<name>%bundle.name</name>
 	<description>%bundle.description</description>
-	<artifactId>mmutil</artifactId>
+	<artifactId>presen</artifactId>
 </project>

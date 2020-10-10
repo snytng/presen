@@ -2,8 +2,8 @@
 <plugin>
    <extension point="com.change_vision.astah.ui.view">
      <view
-	id="snytng.astah.plugin.presen.PresenView"
+	id="snytng.astah.plugin.presen.View"
 	type="extraTab"
-	class="snytng.astah.plugin.presen.PresenView" />
+	class="snytng.astah.plugin.presen.View" />
    </extension>
 </plugin>

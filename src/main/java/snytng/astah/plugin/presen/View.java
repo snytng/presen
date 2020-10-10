@@ -41,7 +41,7 @@ import com.change_vision.jude.api.inf.view.IDiagramViewManager;
 import com.change_vision.jude.api.inf.view.IEntitySelectionEvent;
 import com.change_vision.jude.api.inf.view.IEntitySelectionListener;
 
-public class PresenView
+public class View
 extends
 JPanel
 implements
@@ -53,7 +53,7 @@ IDiagramEditorSelectionListener
 	/**
 	 * logger
 	 */
-	static final Logger logger = Logger.getLogger(PresenView.class.getName());
+	static final Logger logger = Logger.getLogger(View.class.getName());
 	static {
 		ConsoleHandler consoleHandler = new ConsoleHandler();
 		consoleHandler.setLevel(Level.CONFIG);
@@ -78,7 +78,7 @@ IDiagramEditorSelectionListener
 	private transient ProjectAccessor projectAccessor = null;
 	private transient IDiagramViewManager diagramViewManager = null;
 
-	public PresenView() {
+	public View() {
 		try {
 			projectAccessor = AstahAPI.getAstahAPI().getProjectAccessor();
 			diagramViewManager = projectAccessor.getViewManager().getDiagramViewManager();
@@ -117,12 +117,12 @@ IDiagramEditorSelectionListener
 	}
 
 	// 操作ボタン
-	JButton addButton    = new JButton("Add");
-	JButton insertButton = new JButton("Ins");
-	JButton deleteButton = new JButton("Del");
-	JButton clearButton = new JButton("Claer");
-	JButton saveButton   = new JButton("Save");
-	JButton loadButton   = new JButton("Load");
+	JButton addButton    = new JButton(VIEW_BUNDLE.getString("Button.Add"));
+	JButton insertButton = new JButton(VIEW_BUNDLE.getString("Button.Ins"));
+	JButton deleteButton = new JButton(VIEW_BUNDLE.getString("Button.Del"));
+	JButton clearButton  = new JButton(VIEW_BUNDLE.getString("Button.Clear"));
+	JButton saveButton   = new JButton(VIEW_BUNDLE.getString("Button.Save"));
+	JButton loadButton   = new JButton(VIEW_BUNDLE.getString("Button.Load"));
 	JButton firstButton  = new JButton("|<");
 	JButton prevButton   = new JButton("<");
 	JButton numButton    = new JButton("0");
@@ -226,6 +226,7 @@ IDiagramEditorSelectionListener
 		operationPanel.add(insertButton);
 		operationPanel.add(deleteButton);
 		operationPanel.add(clearButton);
+		operationPanel.add(getSeparator());// セパレーター
 		operationPanel.add(saveButton);
 		operationPanel.add(loadButton);
 		operationPanel.add(getSeparator());// セパレーター
