@@ -37,6 +37,7 @@ public class Presentation {
 			return;
 		}
 		slides.remove(slideIndex);
+		slideIndex--;
 	}
 
 	public void clear() {
