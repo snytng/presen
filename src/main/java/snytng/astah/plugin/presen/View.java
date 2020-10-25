@@ -188,7 +188,10 @@ IDiagramEditorSelectionListener
 		});
 		loadButton.addActionListener(e -> {
 			loadSlides();
-			updatePresentationPanel();
+			if(presentation.showFirstSlide()) {
+				showSlide();
+				updatePresentationPanel();
+			}
 		});
 		firstButton.addActionListener(e -> {
 			if(presentation.showFirstSlide()) {
@@ -263,7 +266,7 @@ IDiagramEditorSelectionListener
 			return;
 		}
 
-		if(presentation.getNumberOfSlides() > 0) {
+		if(presentation.getNumberOfSlides() >= 0) {
 			try {
 				TransactionManager.beginTransaction();
 				diagram.setDefinition(presentation.saveString());

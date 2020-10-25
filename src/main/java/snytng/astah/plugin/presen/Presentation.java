@@ -20,14 +20,15 @@ public class Presentation {
 		System.out.println("ZoomFactor=" + zoomFactor);
 		System.out.println("OriginCoord=" + originCoord);
 		slides.add(new Slide(zoomFactor, originCoord.getX(), originCoord.getY(), props));
+		slideIndex = slides.size() - 1;
 	}
 
 	public void insert(double zoomFactor, Point2D originCoord, Map<String, String> props) {
-		System.out.println("ZoomFactor=" + zoomFactor);
-		System.out.println("OriginCoord=" + originCoord);
 		if(slideIndex == -1) {
-			slides.add(new Slide(zoomFactor, originCoord.getX(), originCoord.getY(), props));
+			add(zoomFactor, originCoord, props);
 		} else {
+			System.out.println("ZoomFactor=" + zoomFactor);
+			System.out.println("OriginCoord=" + originCoord);
 			slides.add(slideIndex, new Slide(zoomFactor, originCoord.getX(), originCoord.getY(), props));
 		}
 	}
@@ -38,6 +39,9 @@ public class Presentation {
 		}
 		slides.remove(slideIndex);
 		slideIndex--;
+		if(slideIndex == -1 && ! slides.isEmpty()) {
+			slideIndex = 0;
+		}
 	}
 
 	public void clear() {
@@ -81,6 +85,7 @@ public class Presentation {
 		if(slides.isEmpty()) {
 			return false;
 		}
+
 		slideIndex = slides.size() - 1;
 		return true;
 	}
