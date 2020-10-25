@@ -5,7 +5,7 @@ astah*のモデルの表示状態を記録して再生できるプラグイン�
 モデルを説明するときの助けになるツールです。
 
 # ダウンロード
-- [ここ](https://github.com/snytng/presen/raw/master/target/presen-0.1.3.jar)からダウンロードして下さい。
+- [ここ](https://github.com/snytng/presen/releases/download/V0.1.3/presen-0.1.3.jar)からダウンロードして下さい。
 
 # インストール
 - ダウンロードしたプラグインファイルをastah*アプリケーションにドラッグドロップするか、Program Files\asta-professionals\pluginsに置いて下さい。
